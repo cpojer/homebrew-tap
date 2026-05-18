@@ -1,0 +1,17 @@
+name: test
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Audit cask
+        run: |
+          brew tap cpojer/tap "$GITHUB_WORKSPACE"
+          brew audit --cask cpojer/tap/codiff
+          brew style --cask cpojer/tap/codiff
