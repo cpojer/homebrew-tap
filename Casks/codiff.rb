@@ -13,6 +13,7 @@ cask "codiff" do
   end
 
   depends_on arch: :arm64
+  depends_on macos: ">= :big_sur"
 
   app "Codiff.app"
   binary "#{appdir}/Codiff.app/Contents/Resources/app/bin/codiff-app",
