@@ -1,8 +1,8 @@
 cask "codiff" do
-  version "1.0.1,1.0.1-1"
-  sha256 "cb7f17c45023b49ecec44c149d00f064e01f83d8402fa1b1f6eae141588ca6ed"
+  version "1.1.0"
+  sha256 "d8291c2a9341738162d7bef6b01015febbc1a390c89d7cb3cfc25f1b8cfc05c8"
 
-  url "https://github.com/nkzw-tech/codiff/releases/download/v#{version.csv.second}/Codiff-darwin-arm64-#{version.csv.first}.zip"
+  url "https://github.com/nkzw-tech/codiff/releases/download/v#{version}/Codiff-darwin-arm64-#{version}.zip"
   name "Codiff"
   desc "Visual diff tool for Git changes"
   homepage "https://github.com/nkzw-tech/codiff"
