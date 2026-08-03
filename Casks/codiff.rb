@@ -1,6 +1,6 @@
 cask "codiff" do
-  version "1.9.2"
-  sha256 "4db4acfef44780957e2801700008c94399f57d84f7971a948a3e2851c1366175"
+  version "1.10.0"
+  sha256 "7633bf26969f7509aa899de3663c6dbb15a3b4196ab4bb67a9edf3d67ec16002"
 
   url "https://github.com/nkzw-tech/codiff/releases/download/v#{version}/Codiff-darwin-arm64-#{version}.zip"
   name "Codiff"
@@ -12,6 +12,7 @@ cask "codiff" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on arch: :arm64
   depends_on :macos
 
